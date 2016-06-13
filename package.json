@@ -1,0 +1,19 @@
+{
+  "name": "vfd-microsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conductivemedia/vfd-microsite.git"
+  },
+  "author": "conductive media",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conductivemedia/vfd-microsite/issues"
+  },
+  "homepage": "https://github.com/conductivemedia/vfd-microsite#readme"
+}
