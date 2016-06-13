@@ -1,0 +1,101 @@
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <ul class="nav navbar-nav navbar-left">
+            <li><a href="#home"><i class="glyphicon glyphicon-chevron-left"></i>Back</a></li>
+            <!--<li><a href="#faq"><i class="fa fa-shield"></i> FAQ</a></li>-->
+            <!--<li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>-->
+        </ul>
+    </nav>
+</header>
+<!--Whitespace between navbar and inverters! YAY!-->
+<div class="row">
+    <div class="col-12" style="margin-top:50px;">
+    </div>
+</div>
+<div ng-show="products.length">
+<div class="alert alert-success fade in">
+    <a href="#inverters" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Success!</strong>
+</div>
+</div>
+<div class="results-container">
+    <div class="container">
+        <div class="row">
+            <div ng-show="!products.length">
+                <div class="alert alert-danger" role="alert" style="margin-top:25px;">Sorry, no matching results. Try again!</div>
+            </div>
+        </div>
+    </div>
+    <div class="container" ng-repeat="product in products | filter:query">
+        <div class="container">
+            <div class="row">
+                <h1 class="col-xs-12 col-md-6 product-model"><strong>{{product.model}}</strong></h1>
+                <br>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row results">
+                <div class="col-xs-12 col-md-6 span6">
+                    <img class="inverter-img center-block" ng-src="{{product.imageURL}}">
+                </div>
+                <div class="col-xs-12 col-md-6 span6">
+                    <table class="center-block tbody" border="0" width="125" height="150">
+                        <tr>
+                            <th colspan="2" class="inverter-phase-name">{{product.phasedisplay}}</th>
+                        </tr>
+                        <tr>
+                            <td class="inverter-spec-name">Hp</td>
+                            <td class="inverter-specs">{{product.hpdisplay}}</td>
+                        </tr>
+                        <tr>
+                            <td class="inverter-spec-name">Kw</td>
+                            <td class="inverter-specs">{{product.kw}}</td>
+                        </tr>
+                        <tr>
+                            <td class="inverter-spec-name">Volts</td>
+                            <td class="inverter-specs">{{product.volts}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="btn-group btn-group-justified results-buttons">
+                        <div class="btn-group">
+
+                            <a type="button" class="btn btn-default btn-block webstore" href="{{product.url}}" onclick="window.open(this.href, '_system', 'location=yes'); return false;"><strong>Webstore</strong></a>
+                            <button class="btn btn-default btn-block features" ng-model="collapsed" ng-click="collapsed=!collapsed"><strong>Features</strong></button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                        <div ng-show="collapsed">
+                            <div ng-repeat="feature in product.features">
+                                <li class="item-text-wrap">{{feature}}</li>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<!--FOOTER, boom!-->
+<div class="row footer">
+  <div class="col-md-6">
+    <img class="footer-logo" src="img/HITACHI_INSPIRE_GRAY.png">
+  </div>
+  <div class="col-md-6">
+    <div class="footer-text">
+      <p style="font-weight:bold;">Hitachi Industrial Equipment
+        <br> Hitachi Industrial Equipment Systems Co., Ltd.
+        <br> Hitachi America, Ltd.</p>
+    </div>
+  </div>
+</div>

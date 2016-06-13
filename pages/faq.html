@@ -1,0 +1,508 @@
+<header>
+  <nav class="navbar navbar-default">
+    <ul class="nav navbar-nav navbar-left">
+      <li><a href="#home"><i class="glyphicon glyphicon-chevron-left"></i>Home</a></li>
+      <li><a href="#faq"><i class="fa fa-shield"></i> FAQ</a></li>
+      <li><a href="#guides"><i class="fa fa-comment"></i> Guides</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="container">
+<div class="col faq-title">
+<h4>Frequently Asked Questions</h4>
+<hr>
+</div>
+<div class="guides">
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <h4 class="panel-title">
+        <h4>
+          How can I get access to all the parameters available on the inverter?
+        </h4>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          Review the inverter manual, and navigate through the menu to change parameter B037 to 00.
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <h4 class="panel-title">
+        <h4>
+          What parameter should I change for an external speed reference?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Change the speed reference parameter A001 to 01.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+          <h4 class="panel-title">
+        <h4>
+          What is the parameter setting to enable for external directional or RUN command from the terminals?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Change parameter A002 to 01.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+          <h4 class="panel-title">
+        <h4>
+          What terminal is assigned for FORWARD in the SJ700 and L700 inverters?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Terminal FW is the FORWARD RUN. No programming changes required. Please review the manual for proper wiring configuration.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+          <h4 class="panel-title">
+        <h4>
+          How could I limit the inverter output voltage to the motor?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Adjust parameter A045 to the proper value for your application and motor.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+          <h4 class="panel-title">
+        <h4>
+          Which parameter do I use to select the correct numbers of motor poles in Hitachi inverters?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Utilize parameter H00, and adjust to the correct number of motor poles. The factory default is 4, however, you may select from 2, 4, 6, and 8.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+          <h4 class="panel-title">
+        <h4>
+          What parameter has to be changed for the proper motor output voltage?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Utilize parameter A082 to adjust the voltage to the proper value.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+          <h4 class="panel-title">
+        <h4>
+          How can I set motor full load amp in Hitachi inverters?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Please set the motor protective features using parameter B012 and set to the motor amperage.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+          <h4 class="panel-title">
+        <h4>
+          How could I select the correct Volts per Hertz control mode in Hitachi inverters?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Change parameter A044 to the correct setting for the application.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+          <h4 class="panel-title">
+        <h4>
+          How could I select the maximum frequency in Hitachi inverters?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Adjust parameter A004 to set the maximum frequency.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+          <h4 class="panel-title">
+        <h4>
+          How could I select the base frequency of the motor in Hitachi inverters?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Set the base frequency using parameter A003. This does not need to match the maximum frequency. It can be lower or higher.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
+          <h4 class="panel-title">
+        <h4>
+          How can I set the lower frequency limit in Hitachi inverters?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Set parameter A062 to the desired operational low frequency limit in Hz.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">
+          <h4 class="panel-title">
+        <h4>
+          How can I set the upper frequency limit in Hitachi inverters?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Set parameter A061 to the desired operational high frequency limit in Hz.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseFourteen" aria-expanded="true" aria-controls="collapseFourteen">
+          <h4 class="panel-title">
+        <h4>
+          What parameter do I use to control deceleration time in Hitachi Inverters?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Adjust parameter F003 to the correct deceleration time. Please keep in mind, that some deceleration times may not be possible due to inertia or application specific constraints.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseFifteen" aria-expanded="true" aria-controls="collapseFifteen">
+          <h4 class="panel-title">
+        <h4>
+          What parameter selects the direction of the keypad Run command with regards to the motor rotation?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseFifteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Utilize parameter F004 to select direction desired.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseSixteen" aria-expanded="true" aria-controls="collapseSixteen">
+          <h4 class="panel-title">
+        <h4>
+          What parameter selects the direction of the keypad Run command with regards to the motor rotation?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseSixteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Utilize parameter F004 to select direction desired.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseSeventeen" aria-expanded="true" aria-controls="collapseSeventeen">
+          <h4 class="panel-title">
+        <h4>
+          What parameter do I use to control acceleration time in Hitachi Inverters?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseSeventeen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Utilize F002 to set the acceleration time. Please keep in mind that the selected time is limited by application specific constraints, such as inertia and torque requirements.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseEighteen" aria-expanded="true" aria-controls="collapseEighteen">
+          <h4 class="panel-title">
+        <h4>
+          What parameter enables the DC braking in Hitachi inverters?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseEighteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            You may use parameter A051to enable the DC injection braking feature.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseNineteen" aria-expanded="true" aria-controls="collapseNineteen">
+          <h4 class="panel-title">
+        <h4>
+          What parameter enables dynamic braking in Hitachi Inverters?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseNineteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Utilize parameter B095 to enable dynamic braking.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseTwenty" aria-expanded="true" aria-controls="collapseTwenty">
+          <h4 class="panel-title">
+        <h4>
+          What parameter enables duty cycle for dynamic braking Control in Hitachi inverters?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseTwenty" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Utilize parameter B090 to adjust the dynamic braking ratio.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseTwentyOne" aria-expanded="true" aria-controls="collapseTwentyOne">
+          <h4 class="panel-title">
+        <h4>
+          How do I know which parameters assigned for which intelligent input terminals?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseTwentyOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Parameters C001 through C007 or C008 correspond to each control terminal block location sequentially. Intelligent input 1 is configured through C001, intelligent input 2 is configured through C002, and on.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseTwentyTwo" aria-expanded="true" aria-controls="collapseTwentyTwo">
+          <h4 class="panel-title">
+        <h4>
+          How do I know which parameters assigned for which intelligent output?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseTwentyTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Parameters used to configure the intelligent output terminals begin sequentially from C021. Therefore parameter C021 would correspond to terminal 11, parameter C022 for terminal 12 and on.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseTwentyThree" aria-expanded="true" aria-controls="collapseTwentyThree">
+          <h4 class="panel-title">
+        <h4>
+          What parameter enables PID control?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseTwentyThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Utilize parameter A071 to enable the PID function.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseTwentyFour" aria-expanded="true" aria-controls="collapseTwentyFour">
+          <h4 class="panel-title">
+        <h4>
+          What parameter controls Process Variable (feedback or PV) setting in PID control?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseTwentyFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Utilize parameter A076 to select source of feedback for use in the PID function.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseTwentyFive" aria-expanded="true" aria-controls="collapseTwentyFive">
+          <h4 class="panel-title">
+        <h4>
+          Are alarm contacts A1 and AL2 programmable for other Functions?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseTwentyFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Yes. Alarm contacts can be programmable for any intelligent output functions.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseTwentySix" aria-expanded="true" aria-controls="collapseTwentySix">
+          <h4 class="panel-title">
+        <h4>
+          How do I restore factory default in WJ200 series inverters?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseTwentySix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Navigate to parameter B084 and use the "Set" button to change to 02. Then navigate and change B180 to 01 and press "Set". The display will change to d001, indicating the reset is complete.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseTwentySeven" aria-expanded="true" aria-controls="collapseTwentySeven">
+          <h4 class="panel-title">
+        <h4>
+          Why my new inverter trips immediately on error E02 when a Run command is given?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseTwentySeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Check for motor wiring. If motor is dual voltage rated (ie. 230/460V) make sure motor cables are not crossed over.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseTwentyEight" aria-expanded="true" aria-controls="collapseTwentyEight">
+          <h4 class="panel-title">
+        <h4>
+          Why my new inverter trips on error code E05 when a Run command is issued?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseTwentyEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Verify that parameters A003 and H004 are properly set.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne" href="javascript:;" data-toggle="collapse" data-parent="#accordion" role="button" data-target="#collapseTwentyNine" aria-expanded="true" aria-controls="collapseTwentyNine">
+          <h4 class="panel-title">
+        <h4>
+         How can I select different speed reference sources?
+        </h4>
+          </h4>
+        </div>
+        <div id="collapseTwentyNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Utilize A001 to select the speed reference source that is correct for your application.
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
