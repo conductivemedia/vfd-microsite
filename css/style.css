@@ -16,8 +16,16 @@ a {
 	color: #000;
 }
 
+.full-width-bar {
+  margin: 0 -9999rem;
+  /* add back negative margin value */
+  padding: 0.25rem 9999rem;
+  background: #F2F2F2;
+}
+
 .row-spacing {
-	padding-top: 50px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 @media (max-width: 600px) {
@@ -172,7 +180,6 @@ button:hover
 
 .animation-background {
 	background-color: #2d2d2d;
-	margin-bottom: 50px;
 
 }
 
