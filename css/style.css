@@ -242,6 +242,17 @@ button:hover
 .img-center {
 	display: block;
     margin: 0 auto;
+    width: 287px;
+    height: 46.91px;
+}
+
+@media (max-width: 600px) {
+	.img-center {
+		display: block;
+    	margin: 0 auto;
+    	width: 100px;
+    	height: 16.35px;
+	}
 }
 
 .hitachi-header {
