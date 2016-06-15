@@ -1,4 +1,4 @@
-var micrositeVFD = angular.module('micrositeVFD', ['ngRoute', 'micrositeVFD.services']); //ui.router maybe
+var micrositeVFD = angular.module('micrositeVFD', ['angulartics', 'angulartics.google.analytics', 'ngRoute', 'micrositeVFD.services']); //ui.router maybe
 
 // routes
     micrositeVFD.config(function($routeProvider) {

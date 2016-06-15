@@ -16,6 +16,13 @@ a {
 	color: #000;
 }
 
+/*Removes border radius from ALL corners*/
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
 .full-width-bar {
   margin: 0 -9999rem;
   /* add back negative margin value */
@@ -106,13 +113,23 @@ button:hover
 	padding-top:20px;
 }
 
-.flex-center-vertically {
+.flex-center-vertically, 
+.flex-center-vertically-inverter,
+.flex-center-vertically-help-icons {
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 350px;
 }
 
+@media (max-width: 600px) {
+	.flex-center-vertically-help-icons {
+  		display: flex;
+  		justify-content: center;
+  		flex-direction: column;
+ 	 	height: 150px;
+	}
+}
 /* iPhone landscape */ 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2)and (orientation: landscape) {
     .flex-center-vertically {
@@ -121,6 +138,36 @@ button:hover
   		flex-direction: column;
     	height: 200px;
     }
+    
+    .flex-center-vertically-inverter {
+  		display: flex;
+  		justify-content: center;
+  		flex-direction: column;
+  		height: 200px;
+  		margin-top: -50px;
+	}
+	
+	.flex-center-vertically-help-icons {
+  		display: flex;
+  		justify-content: center;
+  		flex-direction: column;
+ 	 	height: 150px;
+ 	 	margin-top: -50px;
+
+	}
+	
+	.padding-mobile {
+		padding-top: 60px;
+	}
+	
+	.padding-mobile-selection {
+		padding-top: 20px;
+	}
+	
+	.padding-mobile-video {
+		padding-top: 15px;
+		padding-bottom: 150px;
+	}
 }
 /*iPhone portrait*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -129,6 +176,25 @@ button:hover
   		justify-content: center;
   		flex-direction: column;
   		height: 250px;
+	}
+	
+	.padding-mobile {
+		padding-top: 60px;
+	}
+	
+	.padding-mobile-selection {
+		padding-top: 20px;
+	}
+	
+	.padding-setup {
+		padding-bottom: 20px;
+	}
+	
+	.flex-center-vertically-inverter {
+  		display: flex;
+  		justify-content: center;
+  		flex-direction: column;
+  		height: 200px;
 	}
 }
 
@@ -171,7 +237,17 @@ button:hover
 	margin-left: auto; 
 	margin-right: auto;
 	height: auto;
-	width: 100;
+}
+
+.img-center {
+	display: block;
+    margin: 0 auto;
+}
+
+.hitachi-header {
+	padding: 25px;
+	padding-top: 50px;
+	background-color: #2D2D2D;
 }
 
 .text-head {
